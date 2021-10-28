@@ -1,0 +1,45 @@
+.formulario{
+	border: 2px white solid;
+	background-color: rgba(255,255,255,0.5);
+	padding: 2%;
+}
+.paddingOk{
+	padding: 1%;
+}
+.estiloInput{
+	min-width: 254px;
+	min-height: 40px;
+	border-style: solid;
+	border-color: green;
+	border: 3px;
+	color: green;
+	size: 14px;
+	margin: 5px;
+	padding: 12px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.inputCatcha{
+	min-width: 200px;
+	min-height: 40px;
+}
+.ocultar{
+	display:none;
+}
+.error{
+	color:rgb(102, 5, 54);
+	font-size: 13px;
+}
+.imgDelCatcha{
+	width: 200px;
+	height: 42px;
+	margin-left:-5px;
+}
+.okCatcha{
+	color:rgb(1, 19, 5);
+	font-size: 13px;
+}
+.formatoCatcha{
+	background-color:rgb(211, 198, 18);
+	width:auto;
+	height:auto;
+}

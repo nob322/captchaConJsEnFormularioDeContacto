@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto validado y procesado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilosMios.css">
+    <script src="validar.js"></script>
+</head>
+
+<body class="bg-success">
+    <div class="container">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-auto">
+                <br>
+                <form action="" name="formularioContacto" method="post" onsubmit="return validar();" class="formulario">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                           <div class="row justify-content-center">
+                            <div style="max-width:550px;min-width:370px;padding:10px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 paddingOk formatoCatcha">
+                           
+                                 <input type="number" id="catcha" name="catcha" placeholder="Chatcha" class="estiloInput" value="">
+                                 <img style="margin-top:-4px;" src="imgCatcha.jpg" alt="catcha" class="imgDelCatcha">
+
+                             </div>
+                           </div>
+                        
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 paddingOk">
+                            <div class="row justify-content-center">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 paddingOk">
+                                    <p id="errorCatcha" class="ocultar">No ha Ingresado el número del catcha, es obligatorio hacerlo.</p>
+                                    <p id="errorCatchaIngresoErroneo" class="ocultar">Ah ingresado el número incorrecto en el catcha, intente nuevamente.</p>
+                                    <p id="okCatchaOk" class="ocultar">Es correcto, en unos segundos se enviará el formulario, gracias.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <input type="submit" id="envar" name="enviar" class="btn btn-dark" value="Envíar Formulario">
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
